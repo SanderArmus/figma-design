@@ -1,0 +1,196 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url("https://s3-alpha-sig.figma.com/img/85c4/0041/80b7ece24a3d47292461f8e199ffdd36?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hea4ybsG3STOPPWgXlWogQIYcS~IAkB1f~hzuPzVRweNA6qzWk2EMyAtqcpX0kwgdm0Ewhn02EYB~H0659gvhF9wEozhaZ~BY3pPLwMuVFlXOlZccStybzIiwXndFGC5EODDobOLMoSeeMfMJjhwWYMw7miu52aRORrcXOG70N-q-4pgN-72-HIoI2JgFhi2tnO~ANfRBIvVG~MrBPL2YATJIdRZ79i7FQMvIfOhizX562v0aIRXeK9Lke2oL79jkwkFuzf3qJZO94m6FyA~BNd0pYIa4w4decwCHfrjr~iWCCQm1q2ZO3zzRppy1XfSnwFxFbyLnI-vYPeNpcC5oQ__");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); /* Pentagon Shape */
+    position: relative;
+}
+
+/* Dark Overlay on Hero */
+.hero::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    z-index: 1;
+}
+
+/* Heading inside Hero */
+.hero h1 {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+
+h2 {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    font-size:xx-large;
+    color: black;
+    margin: 0;
+    font-weight: 100;
+}
+.tekst {
+    position: relative;
+    z-index: 2; /* Ensure it's above the overlay */
+    font-size: 1rem;
+    color: white;
+    margin-top: 5px; /* Space from the heading */
+}
+.tekst2{
+    font-size: larger;
+    font-weight: 100;
+}
+
+/* Button inside Hero */
+.button-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Basic Button Style */
+button {
+    font-weight: 100 !important;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100 !important;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Focus Effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Header and Navigation Styles */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute items across the width */
+    align-items: center; /* Center vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align left */
+    align-items: center;
+}
+
+nav ul li {
+    padding: 25px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#logo {
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+#social {
+    position: absolute;
+    right: 15px;
+    height: 30px;
+    top: 10px;
+    right: 30px;
+    z-index: 3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section 1 Styles */
+.section-1 {
+    background-color: #ffffff;
+    color: black;
+    padding: 60px 0;
+    text-align: center;
+}
+.row{
+    padding-top: 40px;
+}
+
+/* Section 2 Styles */
+.section-2 {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 60px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+/* Section 3 Styles */
+.section-3 {
+    background-color: #e0e0e0;
+    color: black;
+    padding: 80px 0;
+    text-align: center;
+}
+
