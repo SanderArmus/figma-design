@@ -300,19 +300,12 @@ video {
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
-/* Individual columns */
 .column2 {
     text-align: left;
     flex: 1; /* Each column takes equal space */
     padding: 20px;
     border-radius: 8px;
 }
-
-/* Left column styles */
-.left {
-    color: black;
-}
-
 #macbook{
     max-height: 200px;
 }
