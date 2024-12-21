@@ -55,6 +55,11 @@ h2 {
     margin: 0;
     font-weight: 100;
 }
+h3{
+    font-size: large;
+    padding-top:0px;
+
+}
 .tekst {
     position: relative;
     z-index: 2; /* Ensure it's above the overlay */
@@ -65,6 +70,15 @@ h2 {
 .tekst2{
     font-size: larger;
     font-weight: 100;
+}
+.tekst3{
+    font-size: medium;
+    font-weight: 100;
+}
+
+.video{
+    height: 80%;
+
 }
 
 /* Button inside Hero */
@@ -78,7 +92,7 @@ h2 {
 }
 
 /* Basic Button Style */
-button {
+.trybutton {
     font-weight: 100 !important;
     background-color: #007bff;
     color: white;
@@ -174,12 +188,25 @@ footer {
     text-align: center;
 }
 .row{
-    padding-top: 40px;
+    padding-top: 60px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Section 2 Styles */
 .section-2 {
-    background-color: #f4f4f4;
     color: black;
     padding: 60px 0;
     text-align: center;
@@ -194,3 +221,105 @@ footer {
     text-align: center;
 }
 
+.video-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#playButton {
+    width: 80px; /* Set width to a fixed value for the circle */
+    height: 80px; /* Set height equal to width to make it a perfect circle */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White color for the icon */
+    font-size: 32px; /* Adjust font size to fit the icon */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Makes the button round */
+    display: flex; /* Use flexbox to center the icon */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#playButton::before {
+    content: ""; /* Empty content for the triangle */
+    width: 0;
+    height: 0;
+    border-left: 20px solid white; /* White triangle */
+    border-top: 10px solid transparent; /* Transparent top border */
+    border-bottom: 10px solid transparent; /* Transparent bottom border */
+    position: absolute; /* Position the triangle absolutely */
+    top: 50%; /* Align it vertically in the middle */
+    left: 50%; /* Align it horizontally in the middle */
+    transform: translate(-40%, -50%); /* Fine-tune the center positioning */
+}
+
+button.playButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Initially hide the video */
+.video-wrapper {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Style for video element */
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Container for the columns */
+.container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute space between columns */
+    gap: 20px; /* Add space between the columns */
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Individual columns */
+.column2 {
+    text-align: left;
+    flex: 1; /* Each column takes equal space */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Left column styles */
+.left {
+    color: black;
+}
+
+#macbook{
+    max-height: 200px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+}

@@ -28,7 +28,7 @@
         <p>Most calendars are designed for teams. Slate is designed <br> for freelancers</p>
         </div>
         <div class="button-container">
-            <button>Try For Free</button>
+            <button class="trybutton">Try For Free</button>
         </div>
     </section>
 
@@ -39,14 +39,69 @@
         <p>Most calendars are designed for teams.<br> Slate is designed  for freelancers</p>
         </div>
         <div class="row">
-            <img src="row.png" alt="">
+            <div class="column">
+                <img src="mdi_drawing.png">
+                <h3>OpenType features<br>Variable fonts<h3>
+            <div class="tekst3">
+                <p>Slate helps you see how <br> many more days you need<br>to work to reach your<br>final goal</p>
+            </div>
+            </div>
+            <div class="column">
+                <img src="mdi_draw.png">
+                <h3>Design with real data<h3>
+                    <div class="tekst3">
+                        <p>Slate helps you see how <br> many more days you need<br>to work to reach your<br>final goal</p>
+                    </div>
+            </div>
+            <div class="column">
+                <img src="mdi_brush.png">
+                <h3>OpenType features<br>Variable fonts<h3>
+                    <div class="tekst3">
+                        <p>Slate helps you see how <br> many more days you need<br>to work to reach your<br>final goal</p>
+                    </div>
+            </div>
         </div>
+    </section>
+
+    <section class="video-container">
+        <!-- The image that acts as a background -->
+        <div class="image-container">
+            <img src="screen.png" alt="Video Thumbnail" class="thumbnail">
+        </div>
+
+        <!-- The play button -->
+        <div class="video-button-container">
+            <button id="playButton"></button>
+        </div>
+
+        <!-- The Video (initially hidden) -->
+        <div class="video-wrapper">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/SIaFtAKnqBU?autoplay=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
     </section>
 
     <!-- Section 2 -->
     <section class="section-2">
-        <h1>Welcome to Section 2</h1>
-        <p>This section has a different pentagon-shaped background style.</p>
+        <div class="container">
+            <div class="column2 left">
+                <h2>Fastest way to <br> organize</h2>
+                <p>Most calendars are designed for teams. <br>Slate is designed for freelancers</p>
+            </div>
+            <div class="column2 right">
+                <div class="macbook">
+                    <img src="MacbookPro.png" alt="" id="macbook">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section 3 -->
@@ -59,4 +114,6 @@
         <p>Footer content goes here.</p>
     </footer>
 </body>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
 </html>
