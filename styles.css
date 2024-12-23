@@ -47,7 +47,8 @@ html, body {
 
 
 h2 {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     z-index: 2;
     font-size:xx-large;
@@ -56,8 +57,17 @@ h2 {
     font-weight: 100;
 }
 h3{
-    font-size: large;
+    font-weight: 100;
+    font-size:xx-large;
     padding-top:0px;
+
+}
+h4{
+    font-weight: 100;
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
 
 }
 .tekst {
@@ -89,6 +99,26 @@ h3{
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+}
+
+.testimonial-button-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Orderbutton {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Basic Button Style */
@@ -171,6 +201,13 @@ nav ul li a:hover {
     right: 30px;
     z-index: 3;
 }
+#email{
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100 !important;
+    background-color: rgb(227, 227, 226);
+}
 
 /* Footer Styles */
 footer {
@@ -215,7 +252,6 @@ footer {
 
 /* Section 3 Styles */
 .section-3 {
-    background-color: #e0e0e0;
     color: black;
     padding: 80px 0;
     text-align: center;
@@ -309,10 +345,166 @@ video {
 #macbook{
     max-height: 200px;
 }
+#newletter{
+    max-height: 350px;
+}
+
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack the columns vertically */
     }
+}
+
+.grid-section {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, equal width */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    width: 96%; /* You can adjust the width as needed */
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Grid Items */
+.grid-item {
+    margin: 1%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    height: 150px; /* Fixed height for the grid items */
+}
+
+/* Optional: Hover effect for grid items */
+.grid-item:hover {
+    background-color: #007bff;
+}
+.section-heading{
+    text-align: center;
+    font-weight: 100;
+    font-size: xx-large
+    ;
+}
+.section4{
+    text-align: center;
+}
+.section5{
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+.brands{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+.brand{
+    max-height: 70px;
+}
+.section-container6 {
+    text-align: center;
+    width: 90%;
+    padding: 5%;
+    background-color: #363636;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.section-heading6 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid Section Styling */
+.grid-section6 {
+    padding-top:10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10%;
+    transition: all 0.5s ease; /* Smooth transition for grid reordering */
+    position: relative;
+}
+
+/* Grid Items Styling */
+.grid-item6 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 500px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scaling and moving */
+}
+
+/* Hover effect for grid items */
+.grid-item6:hover {
+    background-color: #0056b3;
+}
+
+/* Class for zooming in the clicked column */
+.zoomed {
+    transform: scale(1.2); /* Zoom in the clicked column */
+    z-index: 10; /* Ensure the clicked item stays on top */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Class for changing background color of the clicked column */
+.active {
+    background-color: #0056b3;
+    color:white /* Change this to your desired color */
+}
+
+
+
+/* For ensuring smooth layout change when clicked */
+.grid-section6 .grid-item6:not(.zoomed) {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Make sure side items transition smoothly */
+}
+.number{
+    padding: 0%;
+    margin: 0%;
+    font-size: 4rem;
+}
+.pricing{
+    font-size: large;
+    padding-top: 40%;
+
+}
+.pricingtext{
+    padding: 0%;
+}
+/* Style for the image */
+.pricing-img {
+    width: 30px; /* Adjust the size */
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for changes */
+}
+
+/* Active state - This class will be added when clicked */
+.active .pricing-img {
+    opacity: 0.7; /* Slight opacity change for active image */
+    transform: scale(1.1); /* Slight zoom effect on click */
+}
+
+/* Optional: Add hover effect for visual feedback */
+.pricing-img:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.per{
+    font-size: small;
 }
