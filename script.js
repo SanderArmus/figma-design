@@ -57,3 +57,12 @@ function swapColumns(index) {
         }
     }
 }
+// Get elements
+const hamburger = document.getElementById('hamburger-icon');
+const mobileNavLinks = document.getElementById('mobile-nav-links');
+
+// Add click event listener to toggle the "active" class
+hamburger.addEventListener('click', () => {
+    mobileNavLinks.classList.toggle('active');
+});
+
