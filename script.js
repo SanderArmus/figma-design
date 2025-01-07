@@ -1,33 +1,60 @@
-// Get references to the elements
 const playButton = document.getElementById("playButton");
 const videoWrapper = document.querySelector(".video-wrapper");
 const video = document.getElementById("video");
 const imageContainer = document.querySelector(".image-container");
-const hamburgerMenu = document.getElementById("hamburgerMenu"); // Reference to the hamburger menu icon
-const menu = document.querySelector(".menu"); // Reference to the menu to toggle
+const hamburgerMenu = document.getElementById("hamburgerMenu");
+const menu = document.querySelector(".menu");
 
-// Add click event listener to the button
+function swapColumns(index) {
+    const gridSection = document.querySelector('.grid-section6');
+    const items = gridSection.children;
+
+    for (let item of items) {
+        item.classList.remove('zoomed');
+        item.classList.remove('move-to-center');
+        item.classList.remove('active');
+    }
+
+    const clickedItem = items[index];
+    clickedItem.classList.add('zoomed');
+    clickedItem.classList.add('active');
+
+    const img = clickedItem.querySelector('.pricing-img');
+    const newImageSrc = img.getAttribute('data-active-img');
+
+    if (newImageSrc && img.src !== newImageSrc) {
+        img.src = newImageSrc;
+    }
+
+    if (index === 1) {
+        return;
+    }
+
+    for (let i = 0; i < items.length; i++) {
+        if (i !== index) {
+            items[i].classList.add('move-to-center');
+        }
+    }
+}
+
 playButton.addEventListener("click", function() {
-    // Hide the image container and show the video
-    imageContainer.style.display = "none";  // Hides the thumbnail image
-    videoWrapper.style.display = "block";  // Shows the video
-    video.play();  // Plays the video
-    playButton.style.display = "none"; // Hide the play button once the video starts
+    imageContainer.style.display = "none";
+    videoWrapper.style.display = "block";
+    video.play();
+    playButton.style.display = "none";
 });
 
-// Hamburger menu functionality
 if (hamburgerMenu && menu) {
     hamburgerMenu.addEventListener("click", function() {
-        menu.classList.toggle("active"); // Toggle the 'active' class on the menu
+        menu.classList.toggle("active");
     });
 }
 
-// Add click event listener to the hamburger icon for mobile navigation
 const hamburger = document.getElementById('hamburger-icon');
 const mobileNavLinks = document.getElementById('mobile-nav');
 if (hamburger && mobileNavLinks) {
     hamburger.addEventListener('click', () => {
-        mobileNavLinks.classList.toggle('active'); // Toggle the active class
+        mobileNavLinks.classList.toggle('active');
     });
 }
 

@@ -478,6 +478,7 @@ video {
     .grid-section6 {
         grid-template-columns: 1fr;
         gap: 5%;
+        margin-bottom: 40%;
     }
 }
 .grid-item6 {
@@ -590,6 +591,9 @@ video {
     font-size: 14px;
     line-height: 1.6;
     background-color: rgb(227, 227, 226);
+}
+#subscriptionForm2 {
+    display: flex;
 }
 .google-map-section {
     padding: 20px;
@@ -708,27 +712,27 @@ video {
 }
 
 .mobile-nav.active {
-    display: flex; /* Show when active */
-    flex-direction: column; /* Stack links vertically */
+    display: flex;
+    flex-direction: column; 
 }
 
 .mobile-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
 }
 
 .mobile-nav li {
-    padding: 15px; /* Space around each link */
-    text-align: center; /* Center the text */
+    padding: 15px; 
+    text-align: center;
 }
 
 .mobile-nav li a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 12px; /* Font size */
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .mobile-nav li a:hover {
-    background-color: #007bff; /* Change background on hover */
+    background-color: #007bff; 
 }
