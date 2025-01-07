@@ -4,9 +4,8 @@ html, body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
-/* Hero Section */
 .hero {
     position: relative;
     background-image: url(https://s3-alpha-sig.figma.com/img/85c4/0041/80b7ece24a3d47292461f8e199ffdd36?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G4I1NBUHDN9SUb4ybOKDR2~PqrZYfa54H4r2snv-dKzc~0sVgUJ3l1XRoVBMsP9tZ37Wn4CZM5b5raNWi4vDd-MwtbKBxCKFxBHWDuNX1CHRKGUNsMvfs4J1UQrNF2gaAQu6YQLCzAdovLisFLmurEeIaOA6914z-1FIpfUKcolykDlB0xitVnwb3TWOrC0tQsHcRY9Xo4WVnH8JL0A4dYtA5ktdWQmpRbtSmveMdxgFYE62K9k8R7qXiCPrPFm9Zt3-T9kIl2n3qbYA78oVdJ5~XuGaP7D03tCNF8mE4rzkfZ-2DZwmWNc7fTCe4EQ8rwuboXr8DF2DkJZQp3ANLg__);
@@ -17,11 +16,9 @@ html, body {
     color: white;
     text-align: center;
     padding: 100px 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); /* Pentagon Shape */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
     position: relative;
 }
-
-/* Dark Overlay on Hero */
 .hero::after {
     content: ""; 
     position: absolute;
@@ -33,8 +30,6 @@ html, body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
     z-index: 1;
 }
-
-/* Heading inside Hero */
 .hero h1 {
     padding: 20px;
     position: relative;
@@ -44,8 +39,6 @@ html, body {
     color: white;
     margin: 0;
 }
-
-
 h2 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,39 +49,32 @@ h2 {
     margin: 0;
     font-weight: 100;
 }
-h3{
+h3 {
     font-weight: 100;
     font-size:xx-large;
     padding-top:0px;
-
 }
-h4{
+h4 {
     font-weight: 100;
     padding-top: 5%;
     text-align: center;
     color: white;
     font-size: 2rem;
-
 }
-
-h6{
+h6 {
     margin: 0%;
     font-weight: bold;
     padding: 0% !important;
     text-align: center;
     font-size: 1.5rem;
-
 }
-h8{
-
+h8 {
     margin: 0%;
     font-weight: bold;
     padding-bottom: 5px;
-
     font-size: 1 rem;
-
 }
-p8{
+p8 {
     margin: 0%;
     font-weight: bold;
     padding: 0% !important;
@@ -97,26 +83,22 @@ p8{
 }
 .tekst {
     position: relative;
-    z-index: 2; /* Ensure it's above the overlay */
+    z-index: 2;
     font-size: 1rem;
     color: white;
-    margin-top: 5px; /* Space from the heading */
+    margin-top: 5px;
 }
-.tekst2{
+.tekst2 {
     font-size: larger;
     font-weight: 100;
 }
-.tekst3{
+.tekst3 {
     font-size: medium;
     font-weight: 100;
 }
-
-.video{
+.video {
     height: 80%;
-
 }
-
-/* Button inside Hero */
 .button-container {
     position: relative;
     z-index: 2;
@@ -125,7 +107,6 @@ p8{
     align-items: center;
     padding-top: 50px;
 }
-
 .testimonial-button-container {
     position: relative;
     z-index: 2;
@@ -135,7 +116,6 @@ p8{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 .Orderbutton {
     position: relative;
     z-index: 2;
@@ -154,8 +134,6 @@ p8{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-/* Basic Button Style */
 .trybutton {
     font-weight: 100 !important;
     background-color: #007bff;
@@ -168,14 +146,10 @@ p8{
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
-
-/* Hover Effect */
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
-
-/* Focus Effect */
 button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
@@ -186,116 +160,96 @@ header {
     z-index: 2;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Distribute items across the width */
-    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    align-items: center;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Align left */
+    justify-content: center;
     align-items: center;
 }
-
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     align-items: center;
     padding: 10px;
 }
-
 nav ul {
     width: 100%;
-
     display: flex;
     justify-content:space-evenly;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 nav ul li {
-
     padding: 25px 25px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: white;
-  }
-  
-  .navbar .logo a {
+}
+.navbar .logo a {
     color: white;
     text-decoration: none;
     font-size: 24px;
-  }
-  
-  .nav-links {
+}
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .nav-links li a {
+}
+.nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-  }
-  
-  .hamburger {
-    display: none; /* Hidden by default */
+}
+.hamburger {
+    display: none;
     font-size: 30px;
     cursor: pointer;
-  }
-  
-
+}
 @media screen and (max-width: 768px) {
     .nav-links {
-      display: none; /* Hide nav links by default on mobile */
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      padding: 20px;
-      gap: 15px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        gap: 15px;
     }
-    .social{
+    .social {
         display:none;
     }
-  
     .nav-links.active {
-      display: flex; /* Show the nav links when the hamburger is clicked */
+        display: flex;
     }
-  
     .hamburger {
-      display: block; /* Show hamburger icon on mobile */
+        display: block;
+        cursor: pointer;
     }
-  
     .nav-links li a {
-      font-size: 20px;
+        font-size: 20px;
     }
-  }
-
+}
 nav ul li a:hover {
     color: #007bff;
 }
-
-
-
-.social2{   
+.social2 {   
     text-align:left;
     padding: 5%;
     right: 15px;
@@ -304,75 +258,63 @@ nav ul li a:hover {
     right: 30px;
     z-index: 4;
 }
-#email{
+#email {
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 100 !important;
     background-color: rgb(227, 227, 226);
 }
-#name{
+#name {
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 100 !important;
     background-color: rgb(227, 227, 226);
 }
-/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
-/* Section 1 Styles */
 .section-1 {
     background-color: #ffffff;
     color: black;
     padding: 60px 0;
     text-align: center;
 }
-.row{
+.row {
     padding-top: 60px;
 }
-
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
 }
 @media (max-width: 768px) {
     .column {
-        float: none; /* Remove floating */
-        width: 100%; /* 1 column on mobile */
-        display: block; /* Ensure block display */
-        padding: 10px; /* Optional: add padding for spacing */
+        float: none;
+        width: 100%;
+        display: block;
+        padding: 10px;
     }
 }
-
-  /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-/* Section 2 Styles */
 .section-2 {
     color: black;
     padding: 60px 0;
     text-align: center;
     font-weight: 100;
 }
-
-/* Section 3 Styles */
 .section-3 {
     color: black;
     padding: 80px 0;
     text-align: center;
 }
-
 .video-container {
     padding-left: 15%;
     width: 70%;
@@ -380,20 +322,17 @@ footer {
     position: relative;
     text-align: center;
 }
-
 .image-container {
     width: 100%;
     height: auto;
     position: relative;
 }
-
 .thumbnail {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
-
 .video-button-container {
     position: absolute;
     top: 50%;
@@ -401,98 +340,82 @@ footer {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
 #playButton {
-    width: 80px; /* Set width to a fixed value for the circle */
-    height: 80px; /* Set height equal to width to make it a perfect circle */
-    background-color: #007bff; /* Blue background color */
-    color: white; /* White color for the icon */
-    font-size: 32px; /* Adjust font size to fit the icon */
-    border: none; /* Remove border */
-    border-radius: 50%; /* Makes the button round */
-    display: flex; /* Use flexbox to center the icon */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    color: white;
+    font-size: 32px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 #playButton::before {
-    content: ""; /* Empty content for the triangle */
+    content: "";
     width: 0;
     height: 0;
-    border-left: 20px solid white; /* White triangle */
-    border-top: 10px solid transparent; /* Transparent top border */
-    border-bottom: 10px solid transparent; /* Transparent bottom border */
-    position: absolute; /* Position the triangle absolutely */
-    top: 50%; /* Align it vertically in the middle */
-    left: 50%; /* Align it horizontally in the middle */
-    transform: translate(-40%, -50%); /* Fine-tune the center positioning */
+    border-left: 20px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
 }
-
 button.playButton:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
-
-/* Initially hide the video */
 .video-wrapper {
     display: none;
     margin-top: 20px;
 }
-
-/* Style for video element */
 video {
     width: 100%;
     border-radius: 8px;
 }
-
-/* Container for the columns */
 .container {
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Distribute space between columns */
-    gap: 20px; /* Add space between the columns */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
 }
-
 .column2 {
     text-align: left;
-    flex: 1; /* Each column takes equal space */
+    flex: 1;
     padding: 20px;
     border-radius: 8px;
 }
-#macbook{
+#macbook {
     max-height: 200px;
 }
-#newletter{
+#newletter {
     max-height: 350px;
 }
-
-
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack the columns vertically */
+        flex-direction: column;
     }
 }
-
 .grid-section {
     padding: 2%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns, equal width */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    width: 96%; /* You can adjust the width as needed */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 96%;
     background-color: #fff;
     border-radius: 10px;
 }
 @media (max-width: 768px) {
     .grid-section {
-        grid-template-columns: 1fr; /* 1 column layout on mobile */
-        grid-template-rows: auto; /* Automatically adjust row height */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
-
-/* Grid Items */
 .grid-item {
     margin: 1%;
     background-color: white;
@@ -501,28 +424,25 @@ video {
     align-items: center;
     border-radius: 5px;
     text-align: center;
-    height: 150px; /* Fixed height for the grid items */
+    height: 150px;
 }
-
-/* Optional: Hover effect for grid items */
 .grid-item:hover {
     background-color: #007bff;
 }
-.section-heading{
+.section-heading {
     text-align: center;
     font-weight: 100;
-    font-size: xx-large
-    ;
+    font-size: xx-large;
 }
-.section4{
+.section4 {
     text-align: center;
 }
-.section5{
+.section5 {
     padding-top: 100px;
     align-items: center;
     text-align: center;
 }
-.brands{
+.brands {
     padding-top: 30px;
     padding-bottom: 20px;
     position: relative;
@@ -530,7 +450,7 @@ video {
     transform: translateX(-50%);
     align-items: center;
 }
-.brand{
+.brand {
     max-height: 70px;
 }
 .section-container6 {
@@ -541,36 +461,30 @@ video {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Heading Styling */
 .section-heading6 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
 }
-
-/* Grid Section Styling */
 .grid-section6 {
     padding-top:5%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10%;
-    transition: all 0.5s ease; /* Smooth transition for grid reordering */
+    transition: all 0.5s ease;
     position: relative;
 }
 @media (max-width: 768px) {
     .grid-section6 {
-        grid-template-columns: 1fr; /* 1 column layout on mobile */
-        gap: 5%; /* Adjust gap between items for mobile */
+        grid-template-columns: 1fr;
+        gap: 5%;
     }
 }
-
-/* Grid Items Styling */
 .grid-item6 {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: column; /* Stack the text vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px;
@@ -578,265 +492,243 @@ video {
     border-radius: 5px;
     height: 500px;
     cursor: pointer;
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scaling and moving */
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
-/* Hover effect for grid items */
 .grid-item6:hover {
     background-color: #0056b3;
 }
-
-/* Class for zooming in the clicked column */
 .zoomed {
-    transform: scale(1.2); /* Zoom in the clicked column */
-    z-index: 10; /* Ensure the clicked item stays on top */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
-/* Class for changing background color of the clicked column */
 .active {
     background-color: #0056b3;
-    color:white /* Change this to your desired color */
+    color:white;
 }
-
-
-
-/* For ensuring smooth layout change when clicked */
 .grid-section6 .grid-item6:not(.zoomed) {
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Make sure side items transition smoothly */
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.number{
+.number {
     padding: 0%;
     margin: 0%;
     font-size: 4rem;
 }
-.pricingtext{
+.pricingtext {
     font-weight: 100;
     margin: 0% !important;
     padding: 0% !important;
 }
-/* Style for the image */
 .pricing-img {
-    width: 30px; /* Adjust the size */
+    width: 30px;
     height: auto;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for changes */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
-/* Active state - This class will be added when clicked */
 .active .pricing-img {
-    opacity: 0.7; /* Slight opacity change for active image */
-    transform: scale(1.1); /* Slight zoom effect on click */
+    opacity: 0.7;
+    transform: scale(1.1);
 }
-
-/* Optional: Add hover effect for visual feedback */
 .pricing-img:hover {
-    opacity: 0.8; /* Slightly reduce opacity on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    opacity: 0.8;
+    transform: scale(1.05);
 }
-
-.per{
+.per {
     font-size: small;
 }
 .grid-item6.active .trybutton {
-    background-color: white; /* Green color when active */
+    background-color: white;
     color: #007bff;
-
 }
-/* Section7 Styles */
 .section7 {
     padding: 40px;
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f9f9f9;
     text-align: center;
 }
-
 .section-heading {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-/* Grid Section7 */
 .grid-section7 {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* 1/3 and 2/3 widths */
-    gap: 20px; /* Space between columns */
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
     margin-top: 20px;
 }
 @media (max-width: 768px) {
     .grid-section7 {
-        grid-template-columns: 1fr; /* 1 column layout on mobile */
-        gap: 10px; /* Reduce gap between items on mobile */
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }
-/* Left column */
 .grid-item7.left-column {
     padding: 20px !important;
     border-radius: 8px;
     border-color: gray;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-/* Right column */
 .grid-item7.right-column {
     padding: 0px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 #subscriptionForm input {
-    margin-bottom: 45px; /* Space between the inputs */
+    margin-bottom: 45px;
     padding: 10px;
-    width: 100%; /* Makes inputs stretch to the full width of the container */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-    border: 1px solid #ccc; /* Optional: adds border around inputs */
-    border-radius: 25px; /* Optional: rounds the corners of the inputs */
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 25px;
 }
-
-/* Optional: Style for the form itself */
 #subscriptionForm {
     display: flex;
-    flex-direction: column; /* Aligns inputs vertically */
+    flex-direction: column;
 }
 #subscriptionForm textarea {
-    resize: vertical; /* Allows vertical resizing only */
-    min-height: 100px; /* Ensures the message box is large by default */
-    font-size: 14px; /* Readable text size */
-    line-height: 1.6; /* Space between lines for better readability */
+    resize: vertical;
+    min-height: 100px;
+    font-size: 14px;
+    line-height: 1.6;
     background-color: rgb(227, 227, 226);
 }
-/* Google Map Section Styling */
 .google-map-section {
     padding: 20px;
     text-align: center;
 }
-
 .google-map-container {
     position: relative;
     width: 60%;
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto;
 }
-
 .google-map-container iframe {
-    width: 100%; /* Makes the iframe responsive */
-    border: none; /* Optional: removes the default iframe border */
-    border-radius: 8px; /* Optional: rounds the corners of the map */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Optional: Make the iframe responsive */
 @media (max-width: 768px) {
     .google-map-container iframe {
-        height: 300px; /* Adjust height for smaller screens */
+        height: 300px;
     }
 }
 .three-column-section {
     padding: 0%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    margin-bottom: 20px; /* Space between columns and the map */
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
 }
-
-/* Styling for each column */
 .three-column-section .column7 {
     display: grid !important;
     font-size: small;
-    padding: 0% !important; /* Ensure no padding is causing height issues */
+    padding: 0% !important;
     width: 100%;
-    align-items: start; /* Ensure columns align to the start */
-    min-height: 0; /* Prevent any minimum height from affecting layout */
+    align-items: start;
+    min-height: 0;
 }
-
-/* Optional: Add this to ensure no overflow */
 .three-column-section .column7 > * {
-    overflow: hidden; /* Prevent overflow from affecting height */
+    overflow: hidden; 
 }
-
-/* Google Map container styling */
 .google-map-container {
-    margin-top: 20px; /* Space above the map */
+    margin-top: 20px;
 }
-
 .google-map-container iframe {
-    width: 100%; /* Ensure the map fills its container */
+    width: 100%;
     height: 450px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
 }
-
-/* Ensure map gets full width in the right column */
 .grid-item7.right-column .google-map-container {
     width: 100%;
 }
-
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .three-column-section {
-        grid-template-columns: 1fr; /* Stacks columns vertically on smaller screens */
+        grid-template-columns: 1fr;
     }
-
     .google-map-container iframe {
-        height: 300px; /* Adjust height for smaller screens */
+        height: 300px;
     }
 }
-/* General styles for the footer */
 .footer-section {
     text-align: left;
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for the left and 1/3 for the right */
-    gap: 20px; /* Space between left and right sections */
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
     padding: 40px;
-    background-color: #252B42; /* Light background color */
+    background-color: #252B42;
 }
-
-/* Styling for the left section with three equal columns */
 .footer-left {
-    display: flex; /* Use flexbox for the three columns */
-    flex-direction: column; /* Ensure columns stack vertically within the left section */
+    display: flex;
+    flex-direction: column; 
 }
-
 .footer-left-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    gap: 20px; /* Space between the columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
-
 .footer-column {
     padding: 20px;
     border-radius: 8px;
 }
-
-/* Styling for the right section */
 .footer-right {
     align-items:flex-start;
     padding: 20px;
     border-radius: 8px;
 }
-
-/* Optional: Make the footer content more responsive for small screens */
 @media (max-width: 768px) {
     .footer-section {
-        grid-template-columns: 1fr; /* Stack left and right columns on small screens */
+        grid-template-columns: 1fr;
     }
-
     .footer-left-grid {
-        grid-template-columns: 1fr; /* Stack the columns vertically on small screens */
+        grid-template-columns: 1fr;
     }
 }
 .footer-nav a {
     font-weight:lighter;
-    display: block; /* Stack the links vertically */
-    color: white; /* Make the links white */
-    text-decoration: none; /* Remove underline */
+    display: block;
+    color: white;
+    text-decoration: none;
     padding-top: 10%;
-    font-size: 12px; /* Adjust font size */
+    font-size: 12px;
 }
-
-/* Styling for hover effect on links */
 .footer-nav a:hover {
-    color: #2091F9; /* Change color when hovering */
-    text-decoration: underline; /* Optional: underline on hover */
+    color: #2091F9;
+    text-decoration: underline;
 }
 .footer-right svg {
     padding: 2%;
-    display: inline-block; /* Ensure it behaves as an inline element */
-    vertical-align: middle; /* Vertically align it in the middle of the text */
+    display: inline-block;
+    vertical-align: middle; 
+}
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 30%;
+    z-index: 1000; 
 }
 
+.mobile-nav.active {
+    display: flex; /* Show when active */
+    flex-direction: column; /* Stack links vertically */
+}
+
+.mobile-nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.mobile-nav li {
+    padding: 15px; /* Space around each link */
+    text-align: center; /* Center the text */
+}
+
+.mobile-nav li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Font size */
+}
+
+.mobile-nav li a:hover {
+    background-color: #007bff; /* Change background on hover */
+}
