@@ -51,10 +51,15 @@ if (hamburgerMenu && menu) {
 }
 
 const hamburger = document.getElementById('hamburger-icon');
-const mobileNavLinks = document.getElementById('mobile-nav');
+const mobileNavLinks = document.getElementById('mobile-nav-links');
+
 if (hamburger && mobileNavLinks) {
     hamburger.addEventListener('click', () => {
+        console.log("Hamburger icon clicked");
         mobileNavLinks.classList.toggle('active');
+        console.log("Mobile nav links active class toggled:", mobileNavLinks.classList.contains('active'));
     });
+} else {
+    console.error("Hamburger icon or mobile nav links not found");
 }
 
