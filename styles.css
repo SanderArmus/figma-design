@@ -256,6 +256,7 @@ nav ul li a:hover {
     z-index: 4;
 }
 #email {
+    margin-right: 2%;
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
